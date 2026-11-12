@@ -1,0 +1,5 @@
+Actual Class,Predicted Class,Count,Outcome Type,Business Meaning
+Dissatisfied (1),Dissatisfied (1),1378,True Positive (TP),Correctly caught dissatisfied orders
+Dissatisfied (1),Satisfied (0),1076,False Negative (FN),Missed dissatisfied orders (Unhappy reviews)
+Satisfied (0),Satisfied (0),13187,True Negative (TN),Correctly identified satisfied orders
+Satisfied (0),Dissatisfied (1),1941,False Positive (FP),Satisfied orders flagged proactively

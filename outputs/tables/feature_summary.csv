@@ -1,0 +1,24 @@
+Feature Name,Data Type,Non-Null Count,Missing %,Mean,Std Dev,Min,Median,Max,Corr with Dissatisfaction
+delivery_duration_days,float64,87908,0.0,12.36,9.4,0.53,10.11,208.35,0.3363
+estimated_delivery_duration_days,float64,87908,0.0,23.68,8.76,2.01,23.2,149.59,0.0443
+delivery_delay_days,float64,87908,0.0,-11.32,10.08,-146.02,-12.06,188.98,0.275
+is_delayed,int64,87908,0.0,0.08,0.27,0.0,0.0,1.0,0.3927
+carrier_duration_days,float64,87907,0.0,9.17,8.61,-16.1,7.06,205.19,0.3029
+approval_duration_days,float64,87895,0.01,0.43,0.85,0.0,0.01,30.77,0.0138
+item_count,float64,87908,0.0,1.14,0.53,1.0,1.0,21.0,0.1344
+total_price,float64,87908,0.0,137.64,211.01,0.85,86.9,13440.0,0.0425
+total_freight,float64,87908,0.0,22.69,21.45,0.0,17.14,1794.96,0.0942
+total_order_value,float64,87908,0.0,160.33,220.63,9.59,105.28,13664.08,0.0498
+freight_ratio,float64,87908,0.0,0.21,0.13,0.0,0.18,0.96,0.0192
+unique_sellers,float64,87908,0.0,1.01,0.12,1.0,1.0,5.0,0.1304
+product_weight_g_mean,float64,87908,0.0,2088.26,3730.74,0.0,700.0,40425.0,0.0275
+product_volume_cm3_mean,float64,87908,0.0,15091.36,23124.73,168.0,6384.0,296208.0,0.0246
+payment_value_total,float64,87907,0.0,160.36,220.63,9.59,105.28,13664.08,0.0498
+payment_installments_max,float64,87907,0.0,2.92,2.71,0.0,2.0,24.0,0.0377
+payment_sequential_count,float64,87907,0.0,1.05,0.38,1.0,1.0,26.0,0.0036
+has_credit_card,float64,87907,0.0,0.77,0.42,0.0,1.0,1.0,0.0034
+has_boleto,float64,87907,0.0,0.2,0.4,0.0,0.0,1.0,-0.0035
+has_voucher,float64,87907,0.0,0.04,0.19,0.0,0.0,1.0,0.0045
+has_debit_card,float64,87907,0.0,0.02,0.12,0.0,0.0,1.0,-0.007
+is_repeat_customer,int64,87908,0.0,0.06,0.24,0.0,0.0,1.0,-0.0033
+is_same_state,int64,87908,0.0,0.36,0.48,0.0,0.0,1.0,-0.0571

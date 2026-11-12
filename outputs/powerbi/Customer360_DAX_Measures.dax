@@ -1,0 +1,202 @@
+// ==============================================================================
+// CUSTOMER360 AI: POWER BI DAX MEASURE LIBRARY
+// Module: COM-702 (C) Applied Data Science — MIET Jammu
+// Project: Customer360 AI Dissatisfaction Prediction & Feedback Analysis
+// Author: Bhawana Sharma (Roll No: 2023A1R076)
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// 1. ORDER VOLUME & COHORT COUNTS
+// ------------------------------------------------------------------------------
+
+Total Delivered Orders = 
+COUNTROWS('Fact_Orders')
+
+Satisfied Orders (Scores 4-5) = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[review_score] IN {4, 5}
+)
+
+Dissatisfied Orders (Scores 1-2) = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[review_score] IN {1, 2}
+)
+
+Neutral Orders (Score 3) = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[review_score] = 3
+)
+
+Binary Modeling Cohort Total = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[is_binary_sample] = 1
+)
+
+
+// ------------------------------------------------------------------------------
+// 2. DISSATISFACTION PERCENTAGES (STRICT DENOMINATORS)
+// ------------------------------------------------------------------------------
+
+// Denominator = All Delivered Orders (N = 95,824). Baseline = 12.81%
+Dissatisfaction Rate (Total Delivered) = 
+DIVIDE(
+    [Dissatisfied Orders (Scores 1-2)],
+    [Total Delivered Orders],
+    0
+)
+
+// Denominator = Binary Modeling Cohort excluding Score 3 (N = 87,908). Baseline = 13.96%
+Dissatisfaction Rate (Binary Cohort) = 
+DIVIDE(
+    [Dissatisfied Orders (Scores 1-2)],
+    [Binary Modeling Cohort Total],
+    0
+)
+
+// Customer Satisfaction (CSAT) Percentage
+CSAT % = 
+DIVIDE(
+    [Satisfied Orders (Scores 4-5)],
+    [Total Delivered Orders],
+    0
+)
+
+
+// ------------------------------------------------------------------------------
+// 3. LOGISTICS & DELIVERY PERFORMANCE MEASURES
+// ------------------------------------------------------------------------------
+
+On-Time Delivered Orders = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[is_delayed] = 0
+)
+
+Delayed Delivered Orders = 
+CALCULATE(
+    COUNTROWS('Fact_Orders'),
+    'Fact_Orders'[is_delayed] = 1
+)
+
+Delivery Delay Rate % = 
+DIVIDE(
+    [Delayed Delivered Orders],
+    [Total Delivered Orders],
+    0
+)
+
+On-Time Dissatisfaction Rate = 
+DIVIDE(
+    CALCULATE([Dissatisfied Orders (Scores 1-2)], 'Fact_Orders'[is_delayed] = 0),
+    [On-Time Delivered Orders],
+    0
+)
+
+Delayed Dissatisfaction Rate = 
+DIVIDE(
+    CALCULATE([Dissatisfied Orders (Scores 1-2)], 'Fact_Orders'[is_delayed] = 1),
+    [Delayed Delivered Orders],
+    0
+)
+
+Dissatisfaction Surge Multiplier = 
+DIVIDE(
+    [Delayed Dissatisfaction Rate],
+    [On-Time Dissatisfaction Rate],
+    0
+)
+
+Average Delivery Duration (Days) = 
+AVERAGE('Fact_Orders'[delivery_duration_days])
+
+Average Estimated Delivery Duration (Days) = 
+AVERAGE('Fact_Orders'[estimated_delivery_duration_days])
+
+Average Delivery Delay (Days) = 
+AVERAGE('Fact_Orders'[delivery_delay_days])
+
+
+// ------------------------------------------------------------------------------
+// 4. FINANCIAL & COMMERCIAL MEASURES
+// ------------------------------------------------------------------------------
+
+Total Sales Value = 
+SUM('Fact_Orders'[total_order_value])
+
+Average Order Value (AOV) = 
+AVERAGE('Fact_Orders'[total_order_value])
+
+Total Freight Revenue = 
+SUM('Fact_Orders'[total_freight])
+
+Average Freight Ratio % = 
+AVERAGE('Fact_Orders'[freight_ratio])
+
+Average Installment Count = 
+AVERAGE('Fact_Orders'[payment_installments_max])
+
+
+// ------------------------------------------------------------------------------
+// 5. MACHINE LEARNING CHAMPION EVALUATION MEASURES
+// ------------------------------------------------------------------------------
+
+Champion Test Records Total = 
+SUM('Dim_Confusion_Matrix'[Count])
+
+Champion True Positives (TP) = 
+CALCULATE(
+    SUM('Dim_Confusion_Matrix'[Count]),
+    'Dim_Confusion_Matrix'[Outcome Type] = "True Positive (TP)"
+)
+
+Champion False Negatives (FN) = 
+CALCULATE(
+    SUM('Dim_Confusion_Matrix'[Count]),
+    'Dim_Confusion_Matrix'[Outcome Type] = "False Negative (FN)"
+)
+
+Champion True Negatives (TN) = 
+CALCULATE(
+    SUM('Dim_Confusion_Matrix'[Count]),
+    'Dim_Confusion_Matrix'[Outcome Type] = "True Negative (TN)"
+)
+
+Champion False Positives (FP) = 
+CALCULATE(
+    SUM('Dim_Confusion_Matrix'[Count]),
+    'Dim_Confusion_Matrix'[Outcome Type] = "False Positive (FP)"
+)
+
+Champion Proactive Recall % = 
+DIVIDE(
+    [Champion True Positives (TP)],
+    [Champion True Positives (TP)] + [Champion False Negatives (FN)],
+    0
+)
+
+Champion Precision % = 
+DIVIDE(
+    [Champion True Positives (TP)],
+    [Champion True Positives (TP)] + [Champion False Positives (FP)],
+    0
+)
+
+Champion Accuracy % = 
+DIVIDE(
+    [Champion True Positives (TP)] + [Champion True Negatives (TN)],
+    [Champion Test Records Total],
+    0
+)
+
+
+// Dynamic Category Dissatisfaction Rate (responds to any slicer)
+Category Dissatisfaction Rate = 
+DIVIDE(
+    CALCULATE(COUNTROWS('Fact_Orders'), 'Fact_Orders'[review_score] IN {1, 2}),
+    COUNTROWS('Fact_Orders'),
+    0
+)

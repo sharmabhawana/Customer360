@@ -1,0 +1,31 @@
+Cohort,N-Gram,TF-IDF Sum Weight,English Translation,Root Cause Theme
+Dissatisfied (Scores 1-2),não,2405.47,not / no,General Negation
+Dissatisfied (Scores 1-2),produto,2195.2,product,Merchandise Reference
+Dissatisfied (Scores 1-2),recebi,1288.82,received,Delivery Dispute
+Dissatisfied (Scores 1-2),comprei,959.44,I bought,Transaction Context
+Dissatisfied (Scores 1-2),veio,903.51,arrived / came,Condition on Arrival
+Dissatisfied (Scores 1-2),entrega,765.2,delivery,Logistics SLA
+Dissatisfied (Scores 1-2),não recebi,751.45,did not receive,Non-Delivery / Missing Order
+Dissatisfied (Scores 1-2),entregue,707.21,delivered,Logistics Status
+Dissatisfied (Scores 1-2),chegou,660.56,arrived,Transit Confirmation
+Dissatisfied (Scores 1-2),recebi produto,611.06,received product,Delivery Negation Context
+Dissatisfied (Scores 1-2),produto não,540.01,product did not,Product Failure
+Dissatisfied (Scores 1-2),nao,530.38,-,Operational Friction
+Dissatisfied (Scores 1-2),compra,502.44,purchase,Transaction Context
+Dissatisfied (Scores 1-2),prazo,485.53,deadline / SLA,Logistics Delay
+Dissatisfied (Scores 1-2),pedido,459.99,-,Operational Friction
+Satisfied (Scores 4-5),produto,4032.13,product,Merchandise Reference
+Satisfied (Scores 4-5),bom,2792.43,good,Quality Appraisal
+Satisfied (Scores 4-5),prazo,2592.3,deadline / SLA,Punctuality
+Satisfied (Scores 4-5),entrega,2348.67,delivery,Fulfillment Service
+Satisfied (Scores 4-5),recomendo,2207.57,I recommend,Advocacy / Loyalty
+Satisfied (Scores 4-5),antes,2036.9,before / ahead,Early Delivery
+Satisfied (Scores 4-5),chegou,1875.62,arrived,Successful Arrival
+Satisfied (Scores 4-5),antes prazo,1635.22,before deadline,Early Delivery Delight
+Satisfied (Scores 4-5),bem,1407.66,well / properly,Condition on Arrival
+Satisfied (Scores 4-5),qualidade,1329.44,quality,Product Standard
+Satisfied (Scores 4-5),ótimo,1244.73,great / excellent,Enthusiastic Delight
+Satisfied (Scores 4-5),excelente,1211.19,excellent,Premium Service
+Satisfied (Scores 4-5),entregue,1169.23,-,Positive Experience
+Satisfied (Scores 4-5),não,1146.71,-,Positive Experience
+Satisfied (Scores 4-5),gostei,1060.75,-,Positive Experience

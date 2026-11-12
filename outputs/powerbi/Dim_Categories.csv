@@ -1,0 +1,75 @@
+primary_product_category,total_orders,dissatisfied_orders,avg_review_score,avg_delivery_delay,delayed_orders,avg_freight_ratio,avg_order_value,dissatisfaction_rate,delay_rate,category_group
+agro_industry_and_commerce,177,22,4.11,-10.56,9,0.161,430.53,0.1243,0.0508,"Automotive, Tools & Garden"
+air_conditioning,241,34,4.12,-13.3,9,0.1634,245.05,0.1411,0.0373,Other Commercial
+art,191,27,4.09,-12.2,15,0.1949,144.65,0.1414,0.0785,"Leisure, Toys & Media"
+arts_and_craftmanship,22,2,4.32,-6.07,2,0.2293,100.18,0.0909,0.0909,"Leisure, Toys & Media"
+audio,341,73,3.85,-9.34,44,0.204,162.09,0.2141,0.129,Electronics & Technology
+auto,3774,483,4.15,-10.56,323,0.2128,175.24,0.128,0.0856,"Automotive, Tools & Garden"
+baby,2739,377,4.12,-10.85,249,0.2017,169.45,0.1376,0.0909,"Health, Personal Care & Baby"
+bed_bath_table,9090,1438,4.01,-10.7,786,0.1987,133.6,0.1582,0.0865,"Home, Living & Decor"
+books_general_interest,488,30,4.54,-11.21,33,0.2336,110.26,0.0615,0.0676,"Leisure, Toys & Media"
+books_imported,50,5,4.44,-10.44,2,0.1901,103.65,0.1,0.04,"Leisure, Toys & Media"
+books_technical,253,24,4.42,-10.49,28,0.2356,90.25,0.0949,0.1107,Electronics & Technology
+cds_dvds_musicals,12,0,4.67,-15.08,0,0.2215,79.58,0.0,0.0,"Leisure, Toys & Media"
+christmas_supplies,122,14,4.11,-11.57,11,0.3341,89.56,0.1148,0.0902,Other Commercial
+cine_photo,62,6,4.39,-9.98,5,0.2192,128.91,0.0968,0.0806,Other Commercial
+computers,174,20,4.22,-11.08,11,0.0513,1260.99,0.1149,0.0632,Electronics & Technology
+computers_accessories,6480,940,4.08,-11.7,493,0.2057,158.64,0.1451,0.0761,Electronics & Technology
+consoles_games,1004,111,4.18,-10.83,80,0.2326,164.32,0.1106,0.0797,Electronics & Technology
+construction_tools_construction,719,91,4.15,-10.38,65,0.1977,223.01,0.1266,0.0904,"Automotive, Tools & Garden"
+construction_tools_lights,227,20,4.22,-10.58,21,0.1772,199.2,0.0881,0.0925,"Automotive, Tools & Garden"
+construction_tools_safety,153,24,4.02,-12.18,7,0.16,275.21,0.1569,0.0458,"Automotive, Tools & Garden"
+cool_stuff,3502,382,4.23,-11.72,235,0.1586,195.41,0.1091,0.0671,Other Commercial
+costruction_tools_garden,186,21,4.28,-12.69,13,0.2631,166.18,0.1129,0.0699,"Automotive, Tools & Garden"
+costruction_tools_tools,94,8,4.43,-11.79,5,0.231,188.63,0.0851,0.0532,"Automotive, Tools & Garden"
+diapers_and_hygiene,25,3,3.96,-11.76,1,0.2608,81.85,0.12,0.04,Other Commercial
+drinks,282,28,4.24,-10.17,19,0.2541,95.6,0.0993,0.0674,Other Commercial
+dvds_blu_ray,55,8,4.18,-12.33,4,0.4014,105.03,0.1455,0.0727,"Leisure, Toys & Media"
+electronics,2483,324,4.13,-10.28,245,0.3615,79.09,0.1305,0.0987,Electronics & Technology
+fashio_female_clothing,35,5,3.97,-11.36,2,0.2099,89.45,0.1429,0.0571,Other Commercial
+fashion_bags_accessories,1803,182,4.24,-12.48,119,0.2273,99.27,0.1009,0.066,"Fashion, Sports & Apparel"
+fashion_childrens_clothes,7,0,5.0,-14.99,0,0.1867,102.71,0.0,0.0,"Fashion, Sports & Apparel"
+fashion_male_clothing,105,24,3.82,-12.91,4,0.2026,116.96,0.2286,0.0381,"Fashion, Sports & Apparel"
+fashion_shoes,229,25,4.28,-13.65,14,0.2093,118.98,0.1092,0.0611,"Fashion, Sports & Apparel"
+fashion_sport,25,2,4.44,-11.42,2,0.2053,107.0,0.08,0.08,"Fashion, Sports & Apparel"
+fashion_underwear_beach,116,19,4.01,-9.8,15,0.2152,95.65,0.1638,0.1293,"Fashion, Sports & Apparel"
+fixed_telephony,209,35,3.97,-14.22,10,0.2456,283.5,0.1675,0.0478,Electronics & Technology
+flowers,28,2,4.39,-11.23,1,0.3507,58.92,0.0714,0.0357,Other Commercial
+food,432,43,4.34,-9.07,43,0.2344,80.8,0.0995,0.0995,Other Commercial
+food_drink,219,9,4.45,-10.66,14,0.291,88.67,0.0411,0.0639,Other Commercial
+furniture_bedroom,90,11,4.26,-12.65,7,0.2272,261.83,0.1222,0.0778,"Home, Living & Decor"
+furniture_decor,6142,912,4.08,-11.61,524,0.223,141.52,0.1485,0.0853,"Home, Living & Decor"
+furniture_living_room,404,56,4.07,-11.0,33,0.2292,209.66,0.1386,0.0817,"Home, Living & Decor"
+furniture_mattress_and_upholstery,37,7,3.89,-6.48,5,0.2989,159.59,0.1892,0.1351,"Home, Living & Decor"
+garden_tools,3381,397,4.2,-11.16,270,0.228,165.55,0.1174,0.0799,"Automotive, Tools & Garden"
+health_beauty,8567,972,4.23,-11.3,757,0.1939,163.81,0.1135,0.0884,"Health, Personal Care & Baby"
+home_appliances,744,82,4.21,-11.91,50,0.251,125.06,0.1102,0.0672,Other Commercial
+home_appliances_2,226,28,4.15,-11.58,16,0.1463,522.23,0.1239,0.0708,Other Commercial
+home_comfort_2,21,4,3.9,-7.02,4,0.4489,49.88,0.1905,0.1905,Other Commercial
+home_confort,368,66,3.91,-9.08,38,0.1598,180.64,0.1793,0.1033,Other Commercial
+home_construction,470,75,4.03,-10.54,38,0.1777,203.26,0.1596,0.0809,"Automotive, Tools & Garden"
+housewares,5646,653,4.2,-11.38,390,0.2433,133.38,0.1157,0.0691,"Home, Living & Decor"
+industry_commerce_and_business,227,22,4.25,-11.61,18,0.1983,200.18,0.0969,0.0793,"Automotive, Tools & Garden"
+kitchen_dining_laundry_garden_furniture,235,25,4.15,-11.52,11,0.2385,241.05,0.1064,0.0468,"Home, Living & Decor"
+kitchen_portables_and_food_preparers,13,3,3.62,-9.05,1,0.2362,325.23,0.2308,0.0769,"Home, Living & Decor"
+la_cuisine,12,2,4.25,-16.01,0,0.1724,189.99,0.1667,0.0,Other Commercial
+luggage_accessories,1008,82,4.37,-11.93,54,0.1946,166.61,0.0813,0.0536,Other Commercial
+market_place,266,29,4.13,-13.17,13,0.2206,122.53,0.109,0.0489,Other Commercial
+music,36,2,4.39,-13.34,3,0.243,183.89,0.0556,0.0833,Other Commercial
+musical_instruments,602,69,4.24,-10.72,54,0.1711,331.49,0.1146,0.0897,"Leisure, Toys & Media"
+office_furniture,1241,272,3.65,-11.15,112,0.2,268.07,0.2192,0.0902,"Home, Living & Decor"
+other_or_unknown,1349,223,4.04,-10.68,119,0.2026,146.26,0.1653,0.0882,Other Commercial
+party_supplies,37,6,4.08,-14.11,1,0.2315,140.33,0.1622,0.027,"Leisure, Toys & Media"
+pc_gamer,7,2,3.43,-10.07,0,0.1043,209.66,0.2857,0.0,Other Commercial
+perfumery,3059,354,4.27,-11.64,226,0.1772,143.99,0.1157,0.0739,"Health, Personal Care & Baby"
+pet_shop,1674,177,4.28,-11.7,103,0.2031,149.24,0.1057,0.0615,Other Commercial
+security_and_services,2,1,2.5,-16.28,0,0.1285,162.26,0.5,0.0,Other Commercial
+signaling_and_security,136,15,4.14,-11.13,7,0.2515,202.67,0.1103,0.0515,Other Commercial
+small_appliances,601,68,4.27,-13.21,37,0.1772,326.47,0.1131,0.0616,Other Commercial
+small_appliances_home_oven_and_coffee,72,5,4.43,-10.82,5,0.1238,683.97,0.0694,0.0694,Other Commercial
+sports_leisure,7448,834,4.23,-11.15,574,0.1988,149.1,0.112,0.0771,"Fashion, Sports & Apparel"
+stationery,2231,216,4.31,-11.29,173,0.2098,120.27,0.0968,0.0775,"Leisure, Toys & Media"
+tablets_printing_image,76,10,4.14,-12.78,4,0.1741,101.86,0.1316,0.0526,"Home, Living & Decor"
+telephony,4049,564,4.06,-10.54,344,0.3022,92.9,0.1393,0.085,Electronics & Technology
+toys,3757,425,4.24,-11.45,275,0.1881,144.48,0.1131,0.0732,"Leisure, Toys & Media"
+watches_gifts,5436,742,4.12,-11.13,456,0.1282,231.36,0.1365,0.0839,"Fashion, Sports & Apparel"
