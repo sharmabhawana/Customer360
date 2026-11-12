@@ -1,8 +1,8 @@
 # Customer360 AI: Predicting E-Commerce Customer Dissatisfaction Using Machine Learning and Understanding Customer Feedback Through Natural Language Processing
 
-**Course:** COM-702 Applied Data Science  
-**Dataset:** Brazilian E-Commerce Public Dataset by Olist (9 Relational CSVs, ~100k Orders, 2016–2018)  
-**Methodology:** Integrated Predictive Machine Learning (Operational CX Features at Delivery Confirmation) + Natural Language Processing (Customer Review Sentiment & Topic Analysis)  
+Course: COM-702 Applied Data Science  
+Dataset:Brazilian E-Commerce Public Dataset by Olist (9 Relational CSVs, ~100k Orders, 2016–2018)  
+Methodology: Integrated Predictive Machine Learning (Operational CX Features at Delivery Confirmation) + Natural Language Processing (Customer Review Sentiment & Topic Analysis)  
 **Quality Audit Status:** **PASSED (100% Verification Rate — Fresh-Kernel Executed & Mathematically Verified)**
 
 ---
